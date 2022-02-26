@@ -5,7 +5,7 @@ export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">Playgon-Social</span>
+        <span className="logo">Playgon-Anti-Social Flow</span>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
@@ -18,8 +18,12 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Homepage</span>
-          <span className="topbarLink">Timeline</span>
+        <span className= "topbarLink">
+            <a href="/home">Homepage</a></span>
+        <span className= "topbarLink">
+            <a  href="/playgonFlowScheduler">Flow</a></span>
+        <span className= "topbarLink">
+            <a href="/wallet">Wallet</a></span>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">
@@ -28,14 +32,14 @@ export default function Topbar() {
           </div>
           <div className="topbarIconItem">
             <Chat />
-            <span className="topbarIconBadge">2</span>
+            <span className="topbarIconBadge">8</span>
           </div>
           <div className="topbarIconItem">
             <Notifications />
             <span className="topbarIconBadge">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbarImg"/>
+        <img src="/assets/person/profilemarvin.jpeg" alt="" className="topbarImg"/>
       </div>
     </div>
   );

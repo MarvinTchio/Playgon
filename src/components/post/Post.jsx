@@ -1,5 +1,6 @@
 import "./post.css";
 import { MoreVert } from "@material-ui/icons";
+import Icon from '@mui/material/Icon';
 import { Users } from "../../dummyData";
 import { useState } from "react";
 

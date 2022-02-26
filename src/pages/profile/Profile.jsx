@@ -20,15 +20,15 @@ export default function Profile() {
               />
               <img
                 className="profileUserImg"
-                src="assets/person/7.jpeg"
-                alt=""
+                src="assets/person/profilemarvin.jpeg"
+                alt="sample user profile picture"
               />
             </div>
             <div className="profileInfo">
                 <h4 className="profileInfoName">Marvin Tchio</h4>
-                <span className="profileInfoDesc">Welcome to Playgon's Social!</span>
-            </div>
-          </div>
+                <span className="profileInfoDesc">Playgon's Flow!</span>
+           </div>
+           </div>
           <div className="profileRightBottom">
             <Feed />
             <Rightbar profile/>

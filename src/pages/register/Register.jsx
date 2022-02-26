@@ -5,9 +5,9 @@ export default function Register() {
     <div className="login">
       <div className="loginWrapper">
         <div className="loginLeft">
-          <h3 className="loginLogo">Playgon-Social</h3>
+          <h3 className="loginLogo">Playgon-Flow</h3>
           <span className="loginDesc">
-            Connect with friends and the world around you on Playgon-Social.
+            Connect with friends aaround the world, compete, team up, and get on the the antisocial flow to view posts such as top winners and NFTS and more on Playgon-Flow.
           </span>
         </div>
         <div className="loginRight">
