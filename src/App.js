@@ -5,10 +5,9 @@ import Register from "./pages/register/Register";
 import Scheduler from "./pages/playgonflowscheduler/PlaygonFlowScheduler";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import { Button } from 'react-bootstrap'
-import MetaMask from './pages/wallet/metamask'
+import MetaMask from './pages/wallet/AppWallet'
 
     function App() {
-//    const { connect, disconnect, isActive, account, shouldDisable } = useMetaMask()
 
       return (
             <div className="App">
