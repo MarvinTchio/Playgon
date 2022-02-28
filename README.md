@@ -5,7 +5,8 @@ of game winners and Non-Fungible Tokens(NFTs) from players within the ecosystem.
 
 ## Playgon Flow
 
-Playgon Flow is a decentralized, skilled and  fair based game engagement ecosystem where the player with the best Flow wins most of the bitcoin stake.
+Playgon Flow is an Open Source, decentralized, skilled and  fair based game engagement ecosystem where the player with the best Flow wins most of the crypto stake.\
+Players recieve 100% of jackPot and contributors keeping this project secured and updated for the economy of gamers will fully benefit from exchange rates.
 
 ### `Features`
 
