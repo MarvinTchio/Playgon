@@ -69,7 +69,7 @@ export default function Rightbar({ profile }) {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/4.jpeg"
+              src="assets/person/5.jpeg"
               alt=""
               className="rightbarFollowingImg"
             />

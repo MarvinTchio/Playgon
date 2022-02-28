@@ -173,7 +173,7 @@ class Scheduler extends Component {
             this.scheduler.message("Event resized: " + args.e.data.text);
           }}
           onTimeRangeSelected={args => {
-            DayPilot.Modal.prompt("New event name", "Event").then(modal => {
+            DayPilot.Modal.prompt("Please enter your PlaygonID to confirm your seat at this event", "Player ID").then(modal => {
               this.scheduler.clearSelection();
               if (!modal.result) {
                 return;
