@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {DayPilot, DayPilotScheduler} from "daypilot-pro-react";
 import Zoom from "./Zoom";
 
-class PlaygonFlowScheduler extends Component {
+class PlayerFlowChart extends Component {
 
   constructor(props) {
     super(props);
@@ -20,18 +20,23 @@ class PlaygonFlowScheduler extends Component {
       durationBarVisible: false,
       treeEnabled: true,
       rowHeaderColumns: [
-        {name: "Tournaments"},
+        {name: "Tournaments", width: 140, height: 190},
         {name: "Capacity", display: "Capacity", width: 90},
         {name: "Spots", display: "Spots", width: 90},
         {name: "Prize", display: "Prize", width: 90},
+        {name: "Risk", display: "Risk", width: 90},
+        {name: "Reward", display: "Reward", width: 90},
       ],
       resources: [
         {
           name: "Epic Games", id: "G2", expanded: true, children: [
-            {name: "Apex", Capacity: 4, Spots: 2, Prize: "200", id: "A"},
-            {name: "Call of Duty", Capacity: 4, Spots: 2, Prize: "200", id: "B"},
-            {name: "League of Legends", Capacity: 4, Spots: 2, Prize: "100", id: "C"},
-            {name: "Minecraft", Capacity: 2, Spots: 2, Prize: "100", id: "D"},
+            {name: "Apex" , Capacity: 9, Spots: 0, Prize: "180", id: "A", Risk: "20", Reward: "60"},
+            {name: "Call of Duty", Capacity: 9, Spots: 3, Prize: "120", id: "B", Risk: "20", Reward: "40"},
+            {name: "League of Legends", Capacity: 4, Spots: 2, Prize: "30", id: "C", Risk: "15", Reward: "30"},
+            {name: "Minecraft", Capacity: 2, Spots: 2, Prize: "40", id: "D", Risk: "20", Reward: "40"},
+            {name: "Minecraft", Capacity: 40, Spots: 2, Prize: "500", id: "D", Risk: "20", Reward: "500"},
+
+
           ]
         },
         {
@@ -155,12 +160,15 @@ class PlaygonFlowScheduler extends Component {
     return (
       <div>
 
+
         <div className="toolbar">
           <Zoom onChange={args => this.zoomChange(args)}/>
-          <button onClick={ev => this.scheduler.message("Welcome!")}>Welcome!</button>
+          <button onClick={ev => this.scheduler.message("Bring your flow 15 minutes prior to your date!")}>Confirm!</button>
           <span className="toolbar-item"><label><input type="checkbox" checked={this.state.cellWidthSpec === "Auto"}
                 onChange={ev => this.cellWidthChange(ev)}/> Auto width</label></span>
         </div>
+        <img className="FlowGraphic" src="assets/motion_picture/cod.jpeg" alt="" />
+
 
         <DayPilotScheduler
           {...config}
@@ -173,6 +181,7 @@ class PlaygonFlowScheduler extends Component {
             this.scheduler.message("Event resized: " + args.e.data.text);
           }}
           onTimeRangeSelected={args => {
+
             DayPilot.Modal.prompt("Please enter your PlaygonID to confirm your seat at this event", "Player ID").then(modal => {
               this.scheduler.clearSelection();
               if (!modal.result) {
@@ -187,13 +196,15 @@ class PlaygonFlowScheduler extends Component {
               });
             });
           }}
+
           ref={component => {
             this.scheduler = component && component.control;
           }}
         />
+
       </div>
     );
   }
 }
 
-export default PlaygonFlowScheduler;
+export default PlayerFlowChart;
