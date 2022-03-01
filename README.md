@@ -5,21 +5,27 @@ of game winners and Non-Fungible Tokens(NFTs) from players within the ecosystem.
 
 ## Playgon Flow
 
-Playgon Flow is a decentralized, skilled and  fair based game engagement ecosystem where the player with the best Flow wins most of the bitcoin stake.
+Playgon Flow is an Open Source, decentralized, skilled and  fair based game engagement ecosystem where the player with the best Flow wins most of the crypto stake.\
+Players recieve 100% of jackPot and contributors keeping this project secured and updated for the economy of gamers will fully benefit from exchange rates.
 
-### `npm start`
+### `Features`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Exchange currency in app's wallet.\
+Enable users to schedule live tournaments.\
+Provide fair and instant smart payments.\
+Enable users to post, comment, like or share each other's NFTs or game outcome.
 
 ### `To do`
 
 Add smart contract to Metamask wallet and For sale page.\
-Fix images and link Mongo DB(for now).\
-Develop and test Flow page to schedule and keep track for players
+Add tournament game graphics to scheduled events\
+Develop and test Flow page to enable palyers to schedule and 
+see the tier and group type of tournament.\
+For Example a group of 3 tournamet on a game like Call of duty 
+would be a tier 6 on Apex it would be an 8.\
+The tier established will be analized and updated to give users
+a better understanding of the skills required
+to win jackpots from scheduled events.
 
 
 
