@@ -23,8 +23,8 @@ class PlayerFlowChart extends Component {
         {name: "Tournaments", width: 140, height: 190},
         {name: "Capacity", display: "Capacity", width: 90},
         {name: "Spots", display: "Spots", width: 90},
-        {name: "Prize", display: "Prize", width: 90},
         {name: "Risk", display: "Risk", width: 90},
+        {name: "Prize", display: "Prize", width: 90},
         {name: "Reward", display: "Reward", width: 90},
       ],
       resources: [
@@ -97,8 +97,8 @@ class PlayerFlowChart extends Component {
         }
         args.data.borderColor = "darker";
         args.data.fontColor = "white";
-
-        args.data.areas = [];
+       <img className="FlowGraphic" src="assets/motion_picture/minecraft.jpeg" alt="" />
+       args.data.areas = [];
         if (args.data.locked) {
           args.data.areas.push(
             {
@@ -107,7 +107,8 @@ class PlayerFlowChart extends Component {
               height: 18,
               width: 18,
               symbol: "icons/daypilot.svg#padlock",
-              fontColor: "white"
+             fontColor: "white"
+
             }
           );
         }
@@ -156,19 +157,20 @@ class PlayerFlowChart extends Component {
   }
 
   render() {
-    const {...config} = this.state;
+  <img className="FlowGraphic" src="assets/motion_picture/minecraft.jpeg" alt="" />
+
+    const {...config } = this.state;
+
     return (
       <div>
-
 
         <div className="toolbar">
           <Zoom onChange={args => this.zoomChange(args)}/>
           <button onClick={ev => this.scheduler.message("Bring your flow 15 minutes prior to your date!")}>Confirm!</button>
           <span className="toolbar-item"><label><input type="checkbox" checked={this.state.cellWidthSpec === "Auto"}
-                onChange={ev => this.cellWidthChange(ev)}/> Auto width</label></span>
+           onChange={ev => this.cellWidthChange(ev)}/> Auto width</label></span>
         </div>
         <img className="FlowGraphic" src="assets/motion_picture/cod.jpeg" alt="" />
-
 
         <DayPilotScheduler
           {...config}
@@ -201,6 +203,7 @@ class PlayerFlowChart extends Component {
             this.scheduler = component && component.control;
           }}
         />
+       <img className="FlowGraphic" src="assets/motion_picture/minecraft.jpeg" alt="" />
 
       </div>
     );

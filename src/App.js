@@ -4,6 +4,9 @@ import Profile from "./pages/profile/Profile";
 import Register from "./pages/register/Register";
 import Scheduler from "./pages/playgonflowscheduler/PlaygonFlowScheduler";
 import PlayerScheduler from "./pages/playgonflowscheduler/PlayerFlowChart";
+import AboutContact from "./pages/aboutcontact/AboutContact";
+import PlaygonFlow from "./pages/playgonflow/PlaygonFlow";
+import PlaygonMaskExchange from "./pages/playgonmaskexchange/PlaygonMaskExchange";
 import { BrowserRouter as Router,Routes, Route, Link } from "react-router-dom";
 import { Button } from 'react-bootstrap'
 import MetaMask from './pages/wallet/AppWallet'
@@ -38,12 +41,14 @@ import MetaMask from './pages/wallet/AppWallet'
       return (
             <div className="App">
                 <Routes>
-
                 <Route path='/' element={<Home/>} />
                 <Route path='/profile' element={<Profile/>} />
                 <Route path='/playgonFlowScheduler' element={<Scheduler/>} />
                 <Route path='/PlayerFlowChart' element={<PlayerScheduler/>} />
                 <Route path='/login' element={<Login/>} />
+                <Route path='/about' element={<AboutContact/>} />
+                <Route path='/playgonflow' element={<PlaygonFlow/>} />
+                <Route path='/playgonmaskexchange' element={<PlaygonMaskExchange/>} />
                 <Route path='/register' element={<Register/>} />
                 <Route path='/wallet' element={<MetaMask/>} />
                 </Routes>

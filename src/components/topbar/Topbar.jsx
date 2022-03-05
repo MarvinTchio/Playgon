@@ -18,12 +18,12 @@ export default function Topbar() {
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
+        <span  className= "topbarLink" >
+            <a  href="/home">Homepage</a></span>
         <span className= "topbarLink">
-            <a href="/home">Homepage</a></span>
+            <a href="/playgonFlowScheduler">Flow</a></span>
         <span className= "topbarLink">
-            <a  href="/playgonFlowScheduler">Flow</a></span>
-        <span className= "topbarLink">
-            <a href="/wallet">Wallet</a></span>
+            <a  href="/wallet">Wallet</a></span>
         </div>
         <div className="topbarIcons">
           <div className="topbarIconItem">

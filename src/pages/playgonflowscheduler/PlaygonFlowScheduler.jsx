@@ -6,7 +6,6 @@ class PlaygonFlowScheduler extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       startDate: "2021-06-01",
       days: 31,
@@ -86,6 +85,7 @@ class PlaygonFlowScheduler extends Component {
           resource: "B",
         }
       ],
+
       onBeforeEventRender: args => {
         if (!args.data.backColor) {
           args.data.backColor = "#93c47d";
@@ -191,6 +191,8 @@ class PlaygonFlowScheduler extends Component {
             this.scheduler = component && component.control;
           }}
         />
+        <img className="FlowGraphic" src="assets/motion_picture/minecraft.jpeg" alt="" />
+
       </div>
     );
   }

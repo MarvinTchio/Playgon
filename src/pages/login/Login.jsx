@@ -2,7 +2,9 @@ import "./login.css";
 
 export default function Login() {
   return (
+
     <div className="login">
+        <img className="rightbarAd" src="assets/motion_picturePub/cod.jpeg" width="200" height="300" alt="" />
       <div className="loginWrapper">
         <div className="loginLeft">
           <h3 className="loginLogo">Playgon</h3>
